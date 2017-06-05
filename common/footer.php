@@ -11,7 +11,7 @@
             <?php endif; ?>
         </div>
 
-        <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
+        <p><?php //echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
 
     <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
 
@@ -20,7 +20,7 @@
 </div><!--end wrap-->
 
 <script type="text/javascript">
-jQuery(document).ready(function () {
+ jQuery(document).ready(function () {
     Omeka.showAdvancedForm();
     Omeka.skipNav();
     Omeka.megaMenu("#top-nav");

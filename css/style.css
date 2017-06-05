@@ -8,7 +8,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-    font-family: "Oxygen", sans-serif;
+    font-family: "times new roman", sans-serif;
     margin-bottom: 10px;
 }
 
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 .masthead .nav li {
     margin-left: 10px;
     font-weight: normal;
-    font-family: "Oxygen", sans-serif;
+    font-family: "times new roman", sans-serif;
 
 }
 
@@ -71,7 +71,7 @@ h2 { color: #6A231F; }
     color: #FFF;
     font-size: 36px;
     font-weight: thin;
-    font-family: "Oxygen", sans-serif;
+    font-family: "times new roman", sans-serif;
 }
 
 /* Columns */
@@ -334,9 +334,11 @@ td img {
 }
 
 #primary {
-    background-color: white;
+    background-color:transparent; /*#e2e5ce*/
     padding-left: 20px;
     padding-right: 20px;
+   /* position:absolute;
+    left:100%; */
 }
 
 .featured-collection {
@@ -362,8 +364,9 @@ td img {
     z-index:999;
     width: 30px;
     height: 30px;
-    text-indent: -999999px;
-    background: url(../images/gray_next.png) no-repeat 0 -30px;
+    
+    /*text-indent: -999999px;
+    background: url(../images/gray_next.png) no-repeat 0 -30px;*/
 }
 
 /*previous button*/
@@ -374,8 +377,8 @@ td img {
     z-index:999;
     width: 30px;
     height: 30px;
-    text-indent: -999999px;
-    background: url(../images/gray_prev.png) no-repeat 0 -30px;
+    /*text-indent: -999999px;
+    background: url(../images/gray_prev.png) no-repeat 0 -30px;*/
 }
 
 /*pager links*/

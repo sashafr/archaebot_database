@@ -13,6 +13,7 @@
     }
     $titleParts[] = option('site_title');
     ?>
+    
     <title><?php echo implode(' &middot; ', $titleParts); ?></title>
 
     <?php echo auto_discovery_link_tags(); ?>
@@ -27,6 +28,12 @@
     queue_css_file('print', 'print');
     echo head_css();
     ?>
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- jQuery style for Tooltips -->
+<link href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
 
     <!-- JavaScripts -->
     <?php 
@@ -44,28 +51,24 @@
     <?php echo head_js(); ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
-    <a href="#content" id="skipnav"><?php echo __('Skip to main content'); ?></a>
+   
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
+     
+     <button type="button" href="#content" id="skipnav" class="btn btn-danger">Skip to main content</button>
     <div id="wrap">
         <header role="banner">
-            <div id="site-title">
+            <div id="site-title" href="http://pennds.org/archaebot_database/">
                 <?php echo link_to_home_page(theme_logo()); ?>
             </div>
-            <div id="search-container" role="search">
-                <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
-                <?php echo search_form(array('show_advanced' => true)); ?>
-                <?php else: ?>
-                <?Php echo search_form(); ?>
-                <?php endif; ?>
-            </div>
+            
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
         </header>
 
         <nav id="top-nav" class="top" role="navigation">
-            <?php echo public_nav_main(); ?>
+            <?php echo public_nav_main(); ?> 
         </nav>
 
-        <div id="content" role="main" tabindex="-1">
+      <div id="content" role="main" tabindex="-1"></div>
             <?php
                 if(! is_current_url(WEB_ROOT)) {
                   fire_plugin_hook('public_content_top', array('view'=>$this));

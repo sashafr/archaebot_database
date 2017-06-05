@@ -3,13 +3,20 @@ echo head(array('bodyid' => 'home'));
 
 ini_set('display_errors',1);
 error_reporting(E_ALL);
-
 ?>
 
+ <div id="search-container" role="search">
+                <?php //if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
+                <?php //echo search_form(array('show_advanced' => true)); ?>
+                <?php // else: ?>
+                <?php //echo search_form();  //why is this "P" as opposed to "p"?>
+                <?php //endif; ?>
+          </div>
 <div id="primary">
     <?php if (get_theme_option('Homepage Text')): ?>
-    <p><?php echo get_theme_option('Homepage Text'); ?></p>
+   <!-- <p><?php echo get_theme_option('Homepage Text'); ?><p>
     <?php endif; ?>
+
 
 <?php
     $collectionTitle = '';
@@ -45,7 +52,7 @@ error_reporting(E_ALL);
         }
 
         echo '<h1 style="display: inline;">' .$collectionName. '</h1> (' . $collection_link . ')';
-        echo '<hr style="visibility: hidden; margin-top: 2px; margin-bottom: 4px;" />';
+        echo '<hr style="visibility: hidden; margin-top: 1px; margin-bottom: 2px;" />';
         echo '<ul id="collection'.$div_counter.'" class="slider">';
 
         for ($i=0; $i < $num_of_collection_items; $i++) {
