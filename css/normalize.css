@@ -66,7 +66,9 @@ html {
  * Remove default margin.
  */
 body {
-  margin: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
 }
 
 /* ==========================================================================
@@ -96,7 +98,7 @@ a:hover {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+/*  margin: 20px; */
 }
 
 /**
@@ -197,6 +199,7 @@ sub {
  */
 img {
   border: 0;
+  padding: 10px;
 }
 
 /**

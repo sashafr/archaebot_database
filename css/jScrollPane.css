@@ -52,7 +52,7 @@ a.jScrollArrowDown {
 	z-index: 1;
 	bottom: 0;
 	right: 0;
-	text-indent: -2000px;
+	text-indent: -2000 /*-2000px;*/
 	overflow: hidden;
 	/*background-color: #666;*/
 	height: 9px;

@@ -1,16 +1,20 @@
+
+
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
 
-<h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
+
+
+<!-- <h1> --> <?php // echo metadata('item', array('Dublin Core', 'Title')); ?> <!-- </h1> -->  <!-- Commented this out because the viewer says the title so it seems redundant -->
+
+<?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 
 <div id="primary">
 
-    <?php if ((get_theme_option('Item FileGallery') == 0) && metadata('item', 'has files')): ?>
-    <?php echo files_for_item(array('imageSize' => 'fullsize')); ?>
-    <?php endif; ?>
+    <?php // if ((get_theme_option('Item FileGallery') == 0) && metadata('item', 'has files')): ?>
+    <?php // echo files_for_item(array('imageSize' => 'fullsize')); ?>
+    <?php // endif; ?>
     
-    <?php echo all_element_texts('item'); ?>
-    
-    <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
+    <?php  echo all_element_texts('item'); ?>
 
 </div><!-- end primary -->
 

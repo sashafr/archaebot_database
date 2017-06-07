@@ -1,4 +1,20 @@
 
+/* Custom Styles */
+
+/*h3{
+    position: relative;
+    bottom: 20px;
+    font-size:50%; 
+}*/
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    color:blue;
+    
+}
+
+
 /* General Styles */
 
 
@@ -6,11 +22,15 @@ p {
     line-height: 1.8;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-    font-family: "times new roman", sans-serif;
+    font-weight: 200;
+    font-family: helvetica, sans-serif;
     margin-bottom: 10px;
+    color:#3b4851;
 }
+
+
 
 .leftline {
     border-left: 1px solid #F4F4F4;
@@ -334,9 +354,11 @@ td img {
 }
 
 #primary {
-    background-color:transparent; /*#e2e5ce*/
-    padding-left: 20px;
+    background-color:rgba(188,111,98, 0.5);
+    padding-left: 40px;
     padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom:20px;
    /* position:absolute;
     left:100%; */
 }
@@ -361,25 +383,28 @@ td img {
     position:absolute;
     top:40%;
     right:-35px;
+    left:100;
     z-index:999;
     width: 30px;
     height: 30px;
-    background-color: #000000;
+   /* background-color: transparent;*/
     
     /*text-indent: -999999px; */
-    background: url(../images/gray_next.png) no-repeat 0 -30px;
+    background-image: url('https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_right_48px-128.png');
+    background-size:100%;
 }
 
 /*previous button*/
 .bx-prev {
     position:absolute;
     top:40%;
-    left:-10px;
+    left:-35px;
     z-index:999;
     width: 30px;
     height: 30px;
     /*text-indent: -999999px; */
-    background: url(../images/gray_prev.png) no-repeat 0 -30px;
+    background: url('https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_left_48px-128.png');
+    background-size:100%;
 }
 
 /*pager links*/
@@ -390,17 +415,19 @@ td img {
     font-size: 12px;
     zoom:1;
     background: url(../images/gray_pager.png) no-repeat 0 -20px;
+    /*position:relative;
+    left:100px;*/
 }
 
 /*auto start button*/
 .bx-auto .start {
-    background: url(../images/gray_auto.png) no-repeat 0 2px;
+    /*background: url(../images/gray_auto.png) no-repeat 0 2px;*/
     padding-left: 13px;
 }
 
 /*auto stop button*/
 .bx-auto .stop {
-    background: url(../images/gray_auto.png) no-repeat 0 -14px;
+    /*background: url(../images/gray_auto.png) no-repeat 0 -14px;*/
     padding-left: 13px;
 }
 
@@ -427,6 +454,8 @@ td img {
     padding-top: 7px;
     font-size:12px;
     color:#666;
+    /*position: relative;
+    left:40;*/
 }
 
 /*captions*/
@@ -469,7 +498,7 @@ td img {
 a {color: #6A231F;}
 a:hover { color: #6A231F; text-decoration: underline; }
 
-body { background-color: #e2e5ce;}
+body { background-color: #eef1e0;}
 
 /*header { margin-top: 10px; }*/
 

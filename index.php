@@ -9,15 +9,14 @@ error_reporting(E_ALL);
                 <?php //if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
                 <?php //echo search_form(array('show_advanced' => true)); ?>
                 <?php // else: ?>
-                <?php //echo search_form();  //why is this "P" as opposed to "p"?>
+                <?php //echo search_form();?>
                 <?php //endif; ?>
           </div>
 <div id="primary">
     <?php if (get_theme_option('Homepage Text')): ?>
    <!-- <p><?php echo get_theme_option('Homepage Text'); ?><p>
     <?php endif; ?>
-
-
+    
 <?php
     $collectionTitle = '';
     $collectionIDs = collection_order_array();
@@ -51,8 +50,8 @@ error_reporting(E_ALL);
              ));
         }
 
-        echo '<h1 style="display: inline;">' .$collectionName. '</h1> (' . $collection_link . ')';
-        echo '<hr style="visibility: hidden; margin-top: 1px; margin-bottom: 2px;" />';
+        echo '<h1 style="display: inline; ">' .$collectionName. '</h1> (' . $collection_link . ')';
+        echo '<hr style="visibility: hidden; margin-top: 1px; margin-bottom: 1px;" />';
         echo '<ul id="collection'.$div_counter.'" class="slider">';
 
         for ($i=0; $i < $num_of_collection_items; $i++) {
