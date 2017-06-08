@@ -274,9 +274,13 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-button,
-select {
+ 
+ 
+button, /* THIS IS THE ANNOYING LITTLE MOBILE SELECTOR */
+select {     
   text-transform: none;
+  position:absolute;
+  left: -9999px;
 }
 
 /**

@@ -74,7 +74,7 @@
             <?php echo public_nav_main(); ?> 
         </nav>
 
-      <div id="content" role="main" tabindex="-1"></div>
+     <!-- <div id="content" role="main" tabindex="-1">this is not a search bar, fam.</div> -->
             <?php
                 if(! is_current_url(WEB_ROOT)) {
                   fire_plugin_hook('public_content_top', array('view'=>$this));

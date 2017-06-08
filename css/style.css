@@ -11,6 +11,7 @@ html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     color:blue;
+    cursor: url('http://68.media.tumblr.com/tumblr_m2wjmfJoKB1qfamg6.gif'), auto);
     
 }
 
@@ -69,7 +70,10 @@ h1, h2, h3, h4, h5, h6 {
 #sublinks ul {  margin: 0; float: right; }
 
 #sublinks a { color: #6A231F; font-size: .9em; font-weight: bold; }
-#content { background-color: #fff; padding: 10px 20px; margin-top: 20px; }
+#content { 
+    background-color: #fff; 
+    padding: 10px 20px;
+    }
 h2 { color: #6A231F; }
 h2 { color: #6A231F; }
 
@@ -213,6 +217,13 @@ h2 { color: #6A231F; }
 }
 
 /* Footer */
+/*nia's custom shit */
+#custom-footer-text {
+    background:transparent;
+}
+
+
+/* end nia's custom shit */
 
 .footer {
     background: #F8F8F8;
@@ -495,10 +506,64 @@ td img {
 
 #header { height: 100px; background-color: #FFF; margin: 0; padding: 0; background-image: url(../images/background.gif); }
 
-a {color: #6A231F;}
-a:hover { color: #6A231F; text-decoration: underline; }
+/* nia inserts stuff here */
+#site-title {
+    font-size:36px;
+    line-height:48px;
+    font-weight:400;
+    text-align:left;
+    margin:auto;
+    padding-top:.75em;
+    padding-left:.25em;
+    position:relative;
+    left:7px;
+    font-family:"adobe gothic std", georgia, sans-serif;
+}
 
-body { background-color: #eef1e0;}
+.item-pagination.navigation {
+  /*  background-color: rgba(255, 255, 0, 0.5); */
+   /* border-top: 1px solid #3b4851;
+    border-bottom: 1px solid #3b4851; */
+    padding-left:0px;
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+#previous-item.previous {
+   /* background-color:red;*/
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    list-style-type:none;
+}
+
+#next-item.next {
+   /* background-color:green;*/
+    width: 50%;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    list-style-type:none;
+    text-align:right;
+}
+
+/* end nia insertion */
+
+a {color: #6A231F;}
+a:hover { 
+    color: #6A231F; 
+    text-decoration: underline; 
+    cursor: url('http://68.media.tumblr.com/tumblr_m2wjmfJoKB1qfamg6.gif'), auto;
+}
+
+body { 
+    background-color: #eef1e0;
+    cursor: url('http://68.media.tumblr.com/ea86304baa2eb70d42d30eefe744248d/tumblr_inline_ml7lpeTxpb1qfamg6.gif'), auto;
+}
 
 /*header { margin-top: 10px; }*/
 

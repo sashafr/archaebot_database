@@ -3,7 +3,9 @@
 <footer role="contentinfo">
 
         <div id="custom-footer-text">
+            
             <?php if ( $footerText = get_theme_option('Footer Text') ): ?>
+            <img src="http://pennds.org/archaebot_database/files/square_thumbnails/f82540ecd8036fa8cd0fd069541111e7.jpg" style="width: 100px; height: 100px; display: inline;">
             <p><?php echo $footerText; ?></p>
             <?php endif; ?>
             <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = option('copyright')): ?>

@@ -15,9 +15,6 @@
     <?php // endif; ?>
     
     <?php  echo all_element_texts('item'); ?>
-
-</div><!-- end primary -->
-
 <aside id="sidebar">
 
     <!-- The following returns all of the files associated with an item. -->
@@ -51,6 +48,9 @@
     </div>
 
 </aside>
+</div><!-- end primary -->
+
+
 
 <ul class="item-pagination navigation">
     <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
