@@ -279,8 +279,7 @@ input {
 button, /* THIS IS THE ANNOYING LITTLE MOBILE SELECTOR */
 select {     
   text-transform: none;
-  position:absolute;
-  left: -9999px;
+  /*left: -9999px;*/
 }
 
 /**

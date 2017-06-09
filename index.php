@@ -5,14 +5,11 @@ ini_set('display_errors',1);
 error_reporting(E_ALL);
 ?>
 
- <div id="search-container" role="search">
-                <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
-                <?php echo search_form(array('show_advanced' => true)); ?>
-                <?php else: ?>
-                <?php echo search_form();?>
-                <?php endif; ?>
-          </div>
-<div id="primary"> 
+<?php echo $this->partial('items/search-form.php',
+    array('formAttributes' =>
+        array('id'=>'advanced-search-form'))); ?>
+
+<div id="primary">
     <?php if (get_theme_option('Homepage Text')): ?>
    <!-- <p><?php echo get_theme_option('Homepage Text'); ?><p>
     <?php endif; ?>
