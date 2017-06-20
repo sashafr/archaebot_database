@@ -35,7 +35,7 @@
     
 
     
-    <link rel="stylesheet" type="text/css" href="seasons/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="public_html/archaebot_database/themes/seasons/css/infopage.css">
     
     
     <!-- jQuery style for Tooltips -->

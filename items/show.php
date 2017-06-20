@@ -10,10 +10,6 @@
 
 <div id="primary">
 
-    <?php // if ((get_theme_option('Item FileGallery') == 0) && metadata('item', 'has files')): ?>
-    <?php // echo files_for_item(array('imageSize' => 'fullsize')); ?>
-    <?php // endif; ?>
-    
     <?php  echo all_element_texts('item'); ?>
 <aside id="sidebar">
 
@@ -46,7 +42,6 @@
         <h2><?php echo __('Citation'); ?></h2>
         <div class="element-text"><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></div>
     </div>
-
 </aside>
 </div><!-- end primary -->
 
@@ -57,4 +52,6 @@
     <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
 </ul>
 
+<hr style="color:#e2e5ce;">
 <?php echo foot(); ?>
+
