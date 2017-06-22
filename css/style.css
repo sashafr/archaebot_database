@@ -16,7 +16,18 @@ html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     color:blue;
+}
+
+.item-img {
     
+  /*  position: relative;
+    right: 10px; */
+   /* border: 5px black; */
+}
+
+.item-description{
+    position: relative;
+    right: 10px;
 }
 
 /* Search css */
@@ -31,6 +42,7 @@ html {
 
 #advanced-search-form {
     margin-bottom: 10px;
+    
 }
 
 #search-keywords.field {
@@ -344,24 +356,93 @@ h2 { color: #6A231F; }
 ul.pagination {
    /* background-color:rgba(0, 0, 0, 0.5); */
     float:right;
+    margin-right:5px;
+
 
 }
 
 input[name="page"] {
     width:20px;
+    text-align: center;
 }
+
 
 .pagination>li:last-child>a, .pagination>li:last-child>span {
     float: right;
+
+}
+
+.pagination_previous {
+    margin-right:10px;
+}
+
+.pagination_next {
+    margin-left:10px;
 }
 
 form {
     display: inline-block;
 
-    margin: 10px;
+  /*  margin: 10px; */
     margin-top: 5px;
 }
 
+#outputs {
+    margin-bottom:50px;
+}
+
+/* GUEST USER PAGE MODIFICATIONS
+--- REGISTER --- */
+
+.inputs.five.columns.omega {
+    margin:0px;
+    clear:both;
+}
+
+input[id="new_password"]{
+    width:222px;
+}
+
+input[id="new_password_confirm"]{
+    width:222px;
+}
+
+p.explanation {
+    float:right;
+    margin-left:7px;
+    font-style:italic;
+    opacity:0.5;
+    font-size:90%;
+}
+
+label[class="required"] {
+    /* display:none; --- cannot be a thing until the placeholders can be added to input text divs */
+}
+
+/* --- LOGIN --- */
+
+input[value="Log In"] {
+    margin-top:5px; /* should also add placeholders to input text divs so username/password labels will disappear */
+}
+
+/* TAXONOMY PAGES */
+
+/* family browse */
+.big-family-box {
+    display:inline;
+    width:100%;
+}
+
+.family-guy {
+    overflow:auto;
+    border:1px solid black; /* temporary colors to know where divs are */
+    background-color:white;
+    width: 40%;
+    height: 350px;
+    display: inline-block;
+    margin: 2%;
+    padding: 1%;
+}
 
 /* end nia's custom shit */
 
@@ -657,7 +738,7 @@ td img {
     padding-left:.25em;
     position:relative;
     left:7px;
-    font-family:"adobe gothic std", georgia, sans-serif;
+    font-family:"adobe gothic std", Helvetica, sans-serif;
 }
 
 .item-pagination.navigation {
