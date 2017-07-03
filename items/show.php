@@ -1,6 +1,6 @@
 
 
-<?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
+<?php echo head(array('title' => metadata($item,array('Item Type Metadata','Common Name')),'bodyclass' => 'items show')); ?>
 
 
 
@@ -9,7 +9,7 @@
 <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 
 <div id="primary">
-
+<?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); //here ?> 
     <?php  echo all_element_texts('item'); ?>
 <aside id="sidebar">
 
@@ -27,7 +27,7 @@
     <?php if (metadata('item', 'Collection Name')): ?>
     <div id="collection" class="element">
         <h3><?php echo __('Collection'); ?></h3>
-        <div class="element-text"><p><?php echo link_to_collection_for_item(); ?></p></div>
+        <div class="element-text"><p><?php echo link_to_collection_for_item(); ?></div>
     </div>
     <?php endif; ?>
 

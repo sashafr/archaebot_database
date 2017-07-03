@@ -48,9 +48,9 @@ if(count($collection_items) != 0){
             set_current_record('item', $item);
             array_push($collection_item_list,
                 array(
-                    'thumb' => item_image('square_thumbnail', array('alt' => metadata($item, array('Dublin Core', 'Title')))),
+                    'thumb' => item_image('square_thumbnail', array('alt' => metadata($item, array('Item Type Metadata', 'Common Name')))),
                     'link' => record_url($item),
-                    'name' => metadata($item, array('Dublin Core', 'Title')),
+                    'name' => metadata($item, array('Item Type Metadata', 'Common Name')),
              ));
         }
     // IF

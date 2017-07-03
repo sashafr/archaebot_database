@@ -435,8 +435,8 @@ input[value="Log In"] {
 
 .family-guy {
     overflow:auto;
-    border:1px solid black; /* temporary colors to know where divs are */
-    background-color:white;
+   /* border:1px solid black; /* temporary colors to know where divs are */
+   /* background-color:white; */
     width: 40%;
     height: 350px;
     display: inline-block;
