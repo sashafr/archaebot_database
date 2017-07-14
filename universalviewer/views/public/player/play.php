@@ -1,5 +1,5 @@
 <?php
-    $title = metadata($record, array('Item Type Metadata', 'Common Name'));
+    $title = metadata($record, array('Dublin Core', 'Title'));
     $creator = metadata($record, array('Dublin Core', 'Creator'));
     if ($creator) {
         $title .= ' - ' . $creator;
