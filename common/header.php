@@ -30,12 +30,9 @@
     queue_css_url('//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic');
     queue_css_file(array('iconfonts', 'normalize', 'style'), 'screen');
     queue_css_file('print', 'print');
+    queue_css_file('infopage');
     echo head_css();
     ?>
-    
-
-    
-    <link rel="stylesheet" type="text/css" href="public_html/archaebot_database/themes/seasons/css/infopage.css">
     
     
     <!-- jQuery style for Tooltips -->

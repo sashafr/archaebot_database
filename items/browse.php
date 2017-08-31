@@ -5,10 +5,12 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
 <h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
 
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#advSearchBox" aria-expanded="false" aria-controls="advSearchBox">Advanced Search</a>
+<div class="collapse" id="advSearchBox">
 <?php echo $this->partial('items/search-form.php',
     array('formAttributes' =>
         array('id'=>'advanced-search-form'))); ?>
-
+</div>
 <?php // echo item_search_filters(); ?>
 
 <?php // echo pagination_links(); ?>
