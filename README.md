@@ -1,4 +1,4 @@
-# 
+# Linnaeus
 This theme is designed to support browsing items described primarily using [Darwin Core](http://rs.tdwg.org/dwc/). It is a modification of the [Seasons](https://github.com/omeka/theme-seasons) theme.
 
 [Theme Demo](http://pennds.org/archaebot_database/)
