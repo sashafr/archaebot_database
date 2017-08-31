@@ -10,8 +10,6 @@ Extensions of the original theme:
 
 ## Requirements
 Tested on Omeka 2.5 | Built on Seasons 2.4
-* Pip
-* Database
 
 ## Installation
 
